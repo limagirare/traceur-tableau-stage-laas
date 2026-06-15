@@ -75,3 +75,6 @@ if points:
         print(f"  {{{pt[0]}, {pt[1]}}}{virgule} \t// Point {i}")
         
     print("};")
+
+# --- AJOUTEZ CETTE LIGNE ICI ---
+input("\nAppuyez sur ENTRÉE pour fermer le programme...")
