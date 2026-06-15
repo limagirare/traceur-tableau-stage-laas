@@ -1,19 +1,15 @@
-# ==============================================================================
 # IMPORTATION DES BIBLIOTHÈQUES (Les outils nécessaires au programme)
-# ==============================================================================
-import cv2  # OpenCV : Bibliothèque spécialisée dans le traitement d'images et la vision par ordinateur
-import numpy as np  # NumPy : Outil mathématique ultra-rapide pour manipuler des tableaux de coordonnées
-import tkinter as tk  # Tkinter : La bibliothèque standard de Python pour créer des interfaces graphiques
-from tkinter import filedialog, ttk  # Outils pour ouvrir l'explorateur de fichiers et créer des onglets modernes
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg  # Permet d'intégrer des graphiques Matplotlib dans Tkinter
-import matplotlib.pyplot as plt  # Matplotlib : Bibliothèque pour tracer des graphiques, des courbes et des points
+import cv2  #traitement d'images
+import numpy as np  # mathématique pour coordonnées
+import tkinter as tk  #interfaces graphiques
+from tkinter import filedialog, ttk  #explorateur de fichiers
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg  # graphiques
+import matplotlib.pyplot as plt 
 
-# ==============================================================================
 # CLASSE PRINCIPALE DE L'APPLICATION
-# ==============================================================================
 class AppMultiContoursArduino:
     def __init__(self, root):
-        """ Le constructeur : cette fonction s'exécute automatiquement à l'ouverture du programme """
+        """exécute automatiquement à l'ouverture du programme """
         self.root = root  # On sauvegarde la fenêtre principale dans une variable interne
         self.root.title("Extracteur multi-contours pour Arduino")  # On définit le titre de la fenêtre supérieure
         self.root.geometry("1200x750")  # On fixe la taille par défaut de la fenêtre (Largeur x Hauteur) en pixels
